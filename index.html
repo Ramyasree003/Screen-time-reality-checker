@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Screen Time Reality Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📱 Screen Time Reality Checker</h1>
+    <p>Find out how much of your life disappears into screens.</p>
+
+    <div class="input-group">
+      <label>Instagram Hours / Day</label>
+      <input type="number" id="instagram" placeholder="Enter hours" min="0">
+    </div>
+
+    <div class="input-group">
+      <label>YouTube Hours / Day</label>
+      <input type="number" id="youtube" placeholder="Enter hours" min="0">
+    </div>
+
+    <div class="input-group">
+      <label>Gaming Hours / Day</label>
+      <input type="number" id="gaming" placeholder="Enter hours" min="0">
+    </div>
+
+    <div class="input-group">
+      <label>Netflix Hours / Day</label>
+      <input type="number" id="netflix" placeholder="Enter hours" min="0">
+    </div>
+
+    <button class="calculate-btn" onclick="calculateScreenTime()">Analyze My Life 😅</button>
+    <button class="reset-btn" onclick="resetFields()">Reset</button>
+
+    <div class="result" id="resultBox">
+      <h2>📊 Your Reality Report</h2>
+
+      <p id="totalHours"></p>
+      <p id="yearlyHours"></p>
+      <p id="daysLost"></p>
+      <p id="achievement"></p>
+      <p id="roast"></p>
+
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar">0%</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Built with HTML, CSS & JavaScript 🚀
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
