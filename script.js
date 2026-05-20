@@ -13,14 +13,14 @@ function calculateScreenTime() {
   let progressColor = "green";
 
   if (totalPerDay <= 2) {
-    roastMessage = "✅ Balanced lifestyle detected.";
+    roastMessage = " Balanced lifestyle detected.";
     progressWidth = 25;
   } else if (totalPerDay <= 5) {
-    roastMessage = "😅 Your phone knows you pretty well.";
+    roastMessage = " Your phone knows you pretty well.";
     progressWidth = 55;
     progressColor = "orange";
   } else {
-    roastMessage = "🚨 You practically live inside your phone.";
+    roastMessage = "You practically live inside your phone.";
     progressWidth = 90;
     progressColor = "red";
   }
